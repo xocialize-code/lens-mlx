@@ -1,0 +1,22 @@
+# venvs / caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# reference oracle clone (has its own .git) — re-clone with:
+#   git clone --depth 1 https://github.com/microsoft/Lens.git refs/Lens
+refs/Lens/
+
+# weights / goldens (large, fetched or generated)
+weights/
+goldens/
+*.safetensors
+
+# generated images (keep assets/ sample committed)
+outputs/
+
+# conversion build output (large mlx safetensors)
+build/
