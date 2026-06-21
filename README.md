@@ -1,3 +1,5 @@
+> **⚠️ Moved — this repo is archived.** The canonical home is **https://github.com/xocialize/lens-mlx** (includes Lens-Turbo). Please use that.
+
 # lens-mlx
 
 Apple MLX port of [`microsoft/Lens`](https://github.com/microsoft/Lens) — a 3.8B
