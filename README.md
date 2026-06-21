@@ -11,9 +11,13 @@ Apple Silicon.
 > Published to mlx-community — [collection](https://huggingface.co/collections/mlx-community/lens-38b-mlx-6a1c6846ca63123d871450f1):
 > [**Lens-3.8B-bf16**](https://huggingface.co/mlx-community/Lens-3.8B-bf16) ·
 > [**-4bit**](https://huggingface.co/mlx-community/Lens-3.8B-4bit) (2.35 GB) ·
-> [**-8bit**](https://huggingface.co/mlx-community/Lens-3.8B-8bit) (4.39 GB). Load a converted
-> repo via `LensPipeline.from_pretrained(base, dit_repo="mlx-community/Lens-3.8B-4bit")`.
-> See per-phase docs under `docs/`. Next: Swift mirror.
+> [**-8bit**](https://huggingface.co/mlx-community/Lens-3.8B-8bit) (4.39 GB), plus the distilled
+> **Lens-Turbo** (4-step / cfg 1.0): [Turbo-bf16](https://huggingface.co/mlx-community/Lens-Turbo-3.8B-bf16) ·
+> [-4bit](https://huggingface.co/mlx-community/Lens-Turbo-3.8B-4bit) · [-8bit](https://huggingface.co/mlx-community/Lens-Turbo-3.8B-8bit).
+> Load a converted repo via `LensPipeline.from_pretrained(base, dit_repo="mlx-community/Lens-3.8B-4bit")`
+> (Turbo: `dit_repo="mlx-community/Lens-Turbo-3.8B-bf16", num_inference_steps=4, guidance_scale=1.0`).
+> Convert a variant with `recipes/convert_lens.py --src <transformer/> --bits {4,8}`.
+> See per-phase docs under `docs/`.
 
 bf16 · int4 (same prompt/seed — int4 perturbs the trajectory into a different, equally sharp image):
 
